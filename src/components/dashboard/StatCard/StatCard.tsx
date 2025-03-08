@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@lib/utils";
-import BlurContainer from "@components/ui/BlurContainer";
+import BlurContainer from "@components/ui/blur-container";
 import { LucideIcon } from "lucide-react";
 
 interface StatCardProps {

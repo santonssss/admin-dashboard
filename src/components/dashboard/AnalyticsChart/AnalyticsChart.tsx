@@ -8,7 +8,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
-import BlurContainer from "@components/ui/BlurContainer";
+import BlurContainer from "@components/ui/blur-container";
 
 interface AnalyticsChartProps {
   title: string;
