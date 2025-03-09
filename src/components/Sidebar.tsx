@@ -19,8 +19,10 @@ const Sidebar: React.FC<SidebarProps> = ({ open, onToggle }) => {
   return (
     <aside
       className={cn(
-        "fixed inset-y-0 left-0 z-10 flex flex-col bg-white dark:bg-gray-900 shadow-sm transition-all duration-300 ease-in-out border-r border-border",
-        open ? "w-64" : "w-20"
+        `fixed inset-y-0 left-0 z-10 flex flex-col bg-white dark:bg-gray-900 shadow-sm transition-all duration-300 ease-in-out border-r border-border`,
+        open ? "!flex w-64" : "w-20",
+        "max-[758px]:hidden",
+        "min-[758px]:flex"
       )}
     >
       <div className="flex items-center justify-between h-16 px-4 border-b border-border">
