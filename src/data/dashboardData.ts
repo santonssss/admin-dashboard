@@ -142,3 +142,76 @@ export const navItems = [
   { icon: Users, label: "Users", path: "/users" },
   { icon: Settings, label: "Settings", path: "/settings" },
 ];
+
+// Analytics data
+export const trafficData = [
+  { name: "Jan", value: 4000 },
+  { name: "Feb", value: 3000 },
+  { name: "Mar", value: 2000 },
+  { name: "Apr", value: 2780 },
+  { name: "May", value: 1890 },
+  { name: "Jun", value: 2390 },
+  { name: "Jul", value: 3490 },
+];
+
+export const conversionData = [
+  { name: "Jan", value: 2.4 },
+  { name: "Feb", value: 3.1 },
+  { name: "Mar", value: 2.8 },
+  { name: "Apr", value: 3.2 },
+  { name: "May", value: 3.6 },
+  { name: "Jun", value: 4.1 },
+  { name: "Jul", value: 4.3 },
+];
+
+export const userSourceData = [
+  { name: "Direct", value: 300 },
+  { name: "Social", value: 450 },
+  { name: "Referral", value: 250 },
+  { name: "Search", value: 600 },
+  { name: "Other", value: 100 },
+];
+
+export const deviceData = [
+  { name: "Desktop", value: 55 },
+  { name: "Mobile", value: 35 },
+  { name: "Tablet", value: 10 },
+];
+
+export const performanceData = [
+  {
+    name: "Jan",
+    current: 4000,
+    previous: 2400,
+  },
+  {
+    name: "Feb",
+    current: 3000,
+    previous: 1398,
+  },
+  {
+    name: "Mar",
+    current: 2000,
+    previous: 1800,
+  },
+  {
+    name: "Apr",
+    current: 2780,
+    previous: 2908,
+  },
+  {
+    name: "May",
+    current: 1890,
+    previous: 1800,
+  },
+  {
+    name: "Jun",
+    current: 2390,
+    previous: 2100,
+  },
+  {
+    name: "Jul",
+    current: 3490,
+    previous: 2400,
+  },
+];
