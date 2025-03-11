@@ -215,3 +215,61 @@ export const performanceData = [
     previous: 2400,
   },
 ];
+// users data
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  role: string;
+  status: "active" | "inactive";
+  avatarUrl?: string;
+  dateJoined: string;
+}
+
+export const mockUsers: User[] = [
+  {
+    id: "1",
+    name: "Alex Johnson",
+    email: "alex@example.com",
+    role: "Admin",
+    status: "active",
+    avatarUrl: "",
+    dateJoined: "2023-01-15",
+  },
+  {
+    id: "2",
+    name: "Sarah Smith",
+    email: "sarah@example.com",
+    role: "Editor",
+    status: "active",
+    avatarUrl: "",
+    dateJoined: "2023-02-20",
+  },
+  {
+    id: "3",
+    name: "Michael Brown",
+    email: "michael@example.com",
+    role: "Viewer",
+    status: "inactive",
+    avatarUrl: "",
+    dateJoined: "2023-03-10",
+  },
+  {
+    id: "4",
+    name: "Emily Davis",
+    email: "emily@example.com",
+    role: "Editor",
+    status: "active",
+    avatarUrl: "",
+    dateJoined: "2023-04-05",
+  },
+  {
+    id: "5",
+    name: "James Wilson",
+    email: "james@example.com",
+    role: "Viewer",
+    status: "active",
+    avatarUrl: "",
+    dateJoined: "2023-05-12",
+  },
+];
