@@ -6,18 +6,24 @@ import Analytics from "@pages/Analytics";
 import Calendar from "@pages/Calendar";
 import Chat from "@pages/Chat";
 import Documents from "@pages/Documents";
+import Users from "@pages/Users";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 function App() {
+  const queryClient = new QueryClient();
   return (
     <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/analytics" element={<Analytics />} />
-          <Route path="/calendar" element={<Calendar />} />
-          <Route path="/messages" element={<Chat />} />
-          <Route path="/documents" element={<Documents />} />
-        </Routes>
-      </BrowserRouter>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/analytics" element={<Analytics />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/messages" element={<Chat />} />
+            <Route path="/documents" element={<Documents />} />
+            <Route path="/users" element={<Users />} />
+          </Routes>
+        </BrowserRouter>
+      </QueryClientProvider>
     </ThemeProvider>
   );
 }
