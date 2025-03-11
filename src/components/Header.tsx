@@ -11,7 +11,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@components/ui/dropdown-menu";
-import { toast } from "sonner";
 
 interface NavbarProps {
   onToggleSidebar: () => void;
@@ -23,13 +22,10 @@ const Header: React.FC<NavbarProps> = ({ onToggleSidebar }) => {
   const toggleDarkMode = () => {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
-    toast(
-      `${newTheme.charAt(0).toUpperCase() + newTheme.slice(1)} theme activated`
-    );
   };
 
   return (
-    <header className="h-16 z-0 border-b border-border bg-background/95 backdrop-blur-sm px-6 flex items-center justify-between sticky top-0 ">
+    <header className="h-16 glass z-0 border-b border-border bg-background/95 backdrop-blur-sm px-6 flex items-center justify-between sticky top-0 ">
       <div className="flex items-center">
         <Button
           variant="ghost"
