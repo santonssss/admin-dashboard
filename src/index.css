@@ -105,12 +105,13 @@
   }
 
   body {
-    @apply bg-background text-foreground h-full;
+    @apply text-foreground h-full;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 
   #root {
     height: 100%;
+    @apply glass;
   }
 
   .glass {
