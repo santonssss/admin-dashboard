@@ -92,7 +92,7 @@ const Analytics = () => {
                           `${name}: ${(percent * 100).toFixed(0)}%`
                         }
                       >
-                        {userSourceData.map((entry, index) => (
+                        {userSourceData.map((_, index) => (
                           <Cell
                             key={`cell-${index}`}
                             fill={COLORS[index % COLORS.length]}
@@ -269,7 +269,7 @@ const Analytics = () => {
                           `${name}: ${(percent * 100).toFixed(0)}%`
                         }
                       >
-                        {userSourceData.map((entry, index) => (
+                        {userSourceData.map((_, index) => (
                           <Cell
                             key={`cell-${index}`}
                             fill={COLORS[index % COLORS.length]}
@@ -300,7 +300,7 @@ const Analytics = () => {
                           `${name}: ${(percent * 100).toFixed(0)}%`
                         }
                       >
-                        {deviceData.map((entry, index) => (
+                        {deviceData.map((_, index) => (
                           <Cell
                             key={`cell-${index}`}
                             fill={COLORS[index % COLORS.length]}
