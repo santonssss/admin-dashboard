@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       <div
         className={cn(
-          `flex-1 flex flex-col lg:ml-20 !ml-0  overflow-hidden transition-all duration-300 ease-in-out`,
+          `flex-1 glass flex flex-col lg:ml-20 !ml-0  overflow-hidden transition-all duration-300 ease-in-out`,
           sidebarOpen ? "ml-64" : "ml-20"
         )}
       >
